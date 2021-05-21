@@ -1,0 +1,334 @@
+/*Design for desktop displays from 1024×768 through 1920×1080
+Design for mobile displays from 360×640 through 414×896
+Design for tablet displays from 601×962 through 1280×800 
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+*{
+	box-sizing: border-box;
+	margin: 0rem;
+	padding: 0rem;
+	font-family: Verdana;
+
+
+}
+html{
+/* margin-left:3rem;
+margin-right: 3rem;  */
+scroll-behavior: smooth; 
+font-size: 64.5%;
+overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ margin-top: 1.5rem;
+ /* background-color: rgb(67, 59, 59); */
+ margin-left:3rem;
+margin-right: 3rem; 
+ /*  position: fixed;
+  top: 0rem;
+  width: 100%; */
+}
+.logo{
+	color: white;
+	display: inline-block;
+	font-size: 2.5rem;
+	font-family: Montserrat;
+	 color: black;
+	 padding-top:1.4rem; 
+	
+}
+.logo:hover{
+transform:scale(1.2);
+transition: .2s;
+}
+li {
+  float: left;
+ 
+}
+
+li a {
+  /* display: block;
+  color: black;
+  text-align: center;
+  margin: 0rem 1.5rem;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-size: 2.3rem;
+   */
+   display: block;
+   color: black;
+   text-align: center;
+   margin: 0rem 1.5rem;
+   padding: 2rem 2rem;
+   text-decoration: none;
+   font-size: 2.3rem;
+}
+.float-left{
+	float: right;
+
+
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #568eff;
+  color: white;
+cursor: pointer;
+transition: .2s;
+/* transform: rotate(360deg); */
+}
+/*home */
+.home-section{
+	height: 70vh;
+	margin-left:3rem;
+margin-right: 3rem; 
+	/* display: flex;
+	flex-direction: row;  */
+/* background-color: grey; */
+position: relative;	/* position: rela|tive;
+ */}
+.header-text{
+	font-size: 3.5rem;
+	margin-top: 6.0rem;
+	position: absolute;
+	top: 35%;
+	left: 3%;
+	transform: translate(-5%,-35%);
+	font-weight: semi-bold;
+	width: 40%;
+	/* background-color: black; */
+}
+.loyal{
+	font-size: 2.5rem;	
+	margin-top: 1rem;
+}
+.future{
+	color:#2267f0 ;
+	animation: future 1s infinite;
+}
+
+@keyframes future{
+	0%{ color:#2267f0;}
+	50%{ color:#601ad0}
+	75%{ color:#0611af;}
+}
+.Building{
+position: absolute;
+	top: 45%;
+	left: 100%;
+	transform: translate(-100%,-45%);
+	width: 60rem;
+	float: left;
+	margin-left: 11rem;
+/* 	background: black; */
+/* 	position: relative;
+	width: 50%;
+	background: black; */
+}
+.building-class{
+	/* position: absolute;
+	width: 80%;
+	top: 45%;
+	left: 100%;
+	transform: translate(-100%,-45%); */
+	width: 75%;
+   
+}
+/* .building-class{
+	float: right;
+	width: 80%;
+	height: 70vh;
+} */
+/* get started button */
+.Get-button{
+	padding: .8rem 1.7rem;
+	background: #2d73ff;
+ 
+border: none;
+	color: white;
+}
+.Get-button:hover{
+ transition: .6s;
+ background: black;
+ cursor: pointer;
+}
+/* medium section*/
+.medium-section{
+	display: flex;
+	flex-direction: row;
+		position: relative;
+		/* width: 100%; */
+		/* background-color: rgb(61, 61, 61); */
+		position: relative;
+		margin-left:3rem;
+margin-right: 3rem; 
+height: 76vh;
+}
+.finance{
+	width: 48%;
+	float: left;
+	height: 60vh;
+}
+.finance-class{
+	width: 90%;
+	height: 70vh;
+}
+.finance-text{
+	font-size: 2.5rem;
+	font-weight: semi-bold;
+/* 	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translate(-100%,-50%); */
+	/* letter-spacing: .0.1rem; */
+	line-height: 4rem;
+	/* word-spacing:.1rem ; */
+	text-align: justify;
+	/*margin-top: 14rem;
+	margin-left: 2rem;*/
+	/* padding-top: 15rem;
+	margin-left: 7rem; */
+	margin: auto;
+  width: 50%;
+
+  padding: 20rem 4rem;
+}
+.finance-content{
+font-size:1.5rem;
+line-height: 2rem;
+letter-spacing: .1rem;
+padding-top: 2rem;
+}
+/* .sync{
+	width: 50%;
+	h
+} */
+/* contact section*/
+.contact-text{
+	font-size: 2.5rem;
+	font-weight: semi-bold;
+/* 	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translate(-100%,-50%); */
+	/* letter-spacing: .0.1rem; */
+	/* line-height: 4rem; */
+	/* word-spacing:.1rem ; */
+	text-align: justify;
+	/*margin-top: 14rem;
+	margin-left: 2rem;*/
+	/* padding-top: 15rem;
+	margin-left: 7rem; */
+	/* margin: auto; */
+  width: 50%;
+
+  padding: 13rem 15rem;
+  /* background-color: black; */
+  
+}
+input{
+	margin-top:2.9rem;
+	width: 25rem;
+	border: none;
+	border-bottom: 1px solid black;
+    padding-bottom: .7rem;
+	padding-top: .5rem;
+	cursor: pointer;
+	
+}
+.contact-header{
+	font-weight: semi-bold;
+}
+
+.contact-img{
+	width: 50%;
+	float: left;
+	height: auto;
+	/* backgro	und-color: black; */
+}
+/* submit nuttom*/
+.submit{
+	padding: .8rem 2rem;/* 1 rem 2.5rem*/
+	background-color:#2d73ff;
+	outline: none;
+	box-shadow: .2rem .2rem #02308d;
+	/* box-shadow: .2rem .5rem #02308d; */
+	outline: none;
+	/* background-color: black; */
+}
+.submit:hover{
+	transition: .2s;
+ background:#004ee9;
+ cursor: pointer;
+ box-shadow: .3rem .3rem #2d73ff;
+ transform: scale(1.1);
+}
+.submit-arrow-img{
+	width:2rem;
+}
+
+/*footer*/
+.footer{
+	width: 100%;
+	height: 20rem;
+	background-color: #073da9;
+}
+.footer-text1{
+	font-size: 2.6rem;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	padding-top:3rem;
+}
+.footer-text2{
+	font-size: 1.6rem;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	padding-top:1rem;	
+}
+.button-div1{
+	text-align: center;
+	margin-top: 3rem;
+}
+@media screen and (max-width: 50rem) {
+		html{
+			font-size: 40%;
+			/* margin-left:3rem;
+	margin-right: 3rem;  */
+	scroll-behavior: smooth; 
+		/* background-color: green; */
+		}
+/* 		.building-class{
+			width: 30%;
+} */
+	}
+	@media screen and (min-width: 1024px){
+		html{
+			font-size:64.5%;
+			/* margin-left:3rem;
+	margin-right: 3rem;  */
+	scroll-behavior: smooth; 
+		/* background-color: green; */
+		}
+/* 		.building-class{
+			width: 30%;
+} */
+	}
