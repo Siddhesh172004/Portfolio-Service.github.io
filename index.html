@@ -58,15 +58,19 @@
       <!-- reposnive ends -->
     </div>
 <!-- contact form -->
+<form action="contact.php" method="post">
     <div class="medium-section" id="contact">
         <div class="contact-img"><img src="contact-text.svg" class="finance-class"></div>
       
       <div class="contact-text"><div class="finance-header-text">
    <div class="contact-header">LET'S KEEP IN TOUCH </div> 
-<input class="text" placeholder="Your name" > <br> 
-<input class="text" placeholder="Email" >
+<input class="text" placeholder="Your name" name="Username" required> <br> 
+<input class="text" placeholder="Email" name="Useremail" required>
 <br>
-<textarea id="subject" class="message" placeholder="Message" style="height:70px"></textarea>
+<!-- <input class="text message" placeholder="Message"> -->
+
+<textarea id="subject" class="message" name="Usersubject" required placeholder="Message" style="height:70px" ></textarea>
+
 <br><br>
 <button class="submit"><img src="arrow.png"  class="submit-arrow-img"></button>
 
@@ -79,6 +83,7 @@
       <!-- reposnive ends -->
     </div>
     </div>
+  </form>
 <!-- Footer -->
 <div class="footer">
   <div class="footer-text1">Dedicated to serve our customers </div> 
