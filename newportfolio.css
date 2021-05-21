@@ -253,6 +253,9 @@ input{
 	cursor: pointer;
 	
 }
+.contact-header{
+	font-weight: semi-bold;
+}
 .message{
 	margin-top:2.9rem;
 	width: 25rem;
@@ -262,11 +265,6 @@ input{
 	padding-top: .5rem;
 	cursor: pointer;
 }
-/* input ends */
-.contact-header{
-	font-weight: semi-bold;
-}
-
 .contact-img{
 	width: 50%;
 	float: left;
