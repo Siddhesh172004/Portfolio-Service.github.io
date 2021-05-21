@@ -253,6 +253,16 @@ input{
 	cursor: pointer;
 	
 }
+.message{
+	margin-top:2.9rem;
+	width: 25rem;
+	border: none;
+	border-bottom: 1px solid black;
+    padding-bottom: .7rem;
+	padding-top: .5rem;
+	cursor: pointer;
+}
+/* input ends */
 .contact-header{
 	font-weight: semi-bold;
 }
